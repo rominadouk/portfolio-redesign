@@ -1,0 +1,7 @@
+#home-portrait {
+    background-image: url('../public/assets/images/anime-portrait.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
