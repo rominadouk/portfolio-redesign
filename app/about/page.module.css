@@ -1,0 +1,12 @@
+#biographySection {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+}
+
+.traitCard {
+    display: flex;
+    height: 150px;
+    width: 180px;
+    background-color: white;
+    justify-content: center;
+}

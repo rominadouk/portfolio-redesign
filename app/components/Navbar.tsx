@@ -27,14 +27,20 @@ const Navbar = () => {
         </div>
         {
             hamburgerMenuIsOpen && (
-                <div className='flex flex-col py-5 relative bg-white gap-5 text-center text-xl'>
-                    <p>Home</p>
-                    <p>Projects</p>
-                    <p>About</p>
-                    <p>Contact</p>
-                    <p>LinkedIn</p>
-                    <p>Github</p>
-                    
+                <div className='flex flex-col py-5 relative bg-white text-center text-xl'>
+                    <ul className='flex flex-col gap-5' onClick={toggleMobileMenu}>
+                        <Link href='/'>
+                            <li>Home</li>
+                        </Link>
+                        <Link href='/projects' onClick={toggleMobileMenu}>
+                            <li>Projects</li>
+                        </Link>
+                        <Link href='/about' onClick={toggleMobileMenu}>
+                            <li>About</li>
+                        </Link>
+                        <li>LinkedIn</li>
+                        <li>Github</li>
+                    </ul>
                 </div>
             )
         }

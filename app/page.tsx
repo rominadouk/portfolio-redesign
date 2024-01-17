@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <div id='gradient-background' className='h-72 mb-[-170px] bg-stone-300'>
+      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green'>
       {/* <Navbar /> */}
       </div>
       <div id='intro' className='flex flex-col text-center'> 
