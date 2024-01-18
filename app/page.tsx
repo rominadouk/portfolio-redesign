@@ -28,31 +28,41 @@ export default function Home() {
     ]
 
   return (
-    <main className="">
-      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green'>
-      {/* <Navbar /> */}
+    <main className="lg:flex lg:flex-col">
+      {/* Gradient Header */}
+      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green lg:h-96 lg:mb-[-240px]'>
       </div>
-      <div id='intro' className='flex flex-col text-center'> 
-        <p className='mb-1 text-xl'>Hi, I'm</p>
-        <div id='home-portrait' className='h-52 rounded-lg w-80 relative self-center'> 
+      {/* Gradient Header End*/}
+
+      {/* Intro Blurb */}
+      <div id='intro' className='flex flex-col text-center lg:flex-row lg:text-left lg:self-center'> 
+        {/* Anime Portrait Image */}
+        <div id='home-portrait' className='h-52 rounded-md w-80 relative self-center lg:h-72 lg:w-96 lg:self-start lg:ml-28'> 
         </div>
-        <h1 className='text-5xl mt-3 font-medium'>Romina Douk</h1>
-        <p className='font-medium'>Full-Stack Software Developer</p>
+        {/* Anime Portrait Image End*/}
+        <div className='mt-3 lg:self-center lg:ml-[-25px] lg:z-50'>
+          <h1 className='text-6xl font-medium lg:font-semibold'>Romina Douk</h1>
+          <p className='font-medium lg:mt-3 lg:text-3xl'>Full-Stack Software Developer</p>
+        </div>
       </div>
-    <section id='projects' className='flex flex-col items-center mt-10 gap-9 pb-5'>
-      {projects.map((project) => {
-        return (
-          <div key={project.title} className='flex flex-col justify-between h-60 w-56 text-center relative drop-shadow-xl '>
-            <div className=' flex-1 relative'>
-              <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' />
+      {/* Intro Blurb  End*/}
+
+      {/* Project Section */}
+      <section id='projects' className='flex flex-col items-center mt-10 gap-9 pb-5 lg:flex-row lg:justify-center'>
+        {projects.map((project) => {
+          return (
+            <div key={project.title} className='flex flex-col justify-between h-60 w-56 text-center relative drop-shadow-xl'>
+              <div className=' flex-1 relative'>
+                <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' />
+              </div>
+              <h2 className='py-3 bg-white '>{project.title}</h2>
             </div>
-            <h2 className='py-3 bg-white '>{project.title}</h2>
-          </div>
-        )
-      })}
-      <button className='bg-button-color text-white py-2 px-6'>Contact</button>
-      
-    </section>
+          )
+        })}
+      </section>
+      {/* Project Section End*/}
+      <button className='bg-button-color text-white py-3 px-14 rounded-md lg:self-center'>Contact</button>
+
 
     </main>
   )
