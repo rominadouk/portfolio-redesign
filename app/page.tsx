@@ -50,7 +50,7 @@ export default function Home() {
           </div>
         )
       })}
-      <button className='bg-stone-300 py-2 px-6'>Contact</button>
+      <button className='bg-button-color text-white py-2 px-6'>Contact</button>
       
     </section>
 

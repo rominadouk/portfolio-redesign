@@ -23,7 +23,7 @@ const Navbar = () => {
             <p className='text-3xl font-semibold'>RD</p>
             <p className='text-lg place-self-center'>Romina Douk</p>
         </div>
-        <Image src={hamburgerMenu}   className='lg:hidden' alt='three-line-menu' onClick = {toggleMobileMenu}/>
+        <Image src={hamburgerMenu}   className='lg:hidden cursor-pointer' alt='three-line-menu' onClick = {toggleMobileMenu}/>
         </div>
         {
             hamburgerMenuIsOpen && (
@@ -37,6 +37,9 @@ const Navbar = () => {
                         </Link>
                         <Link href='/about' onClick={toggleMobileMenu}>
                             <li>About</li>
+                        </Link>
+                        <Link href='/contact' onClick={toggleMobileMenu}>
+                            <li>Contact</li>
                         </Link>
                         <li>LinkedIn</li>
                         <li>Github</li>

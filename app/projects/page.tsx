@@ -29,8 +29,8 @@ const Projects = () => {
                 <li>JavaScript</li>
             </ul>
             <div className='flex flex-col gap-2 mt-3'>
-                <button className='bg-stone-400 text-white w-40 py-2 rounded self-center'>Project Title</button>
-                <button className='bg-stone-400 text-white w-40 py-2 rounded self-center'>Project Title</button>
+                <button className='bg-button-color text-white w-40 py-2 rounded self-center'>Project Title</button>
+                <button className='bg-button-color text-white w-40 py-2 rounded self-center'>Project Title</button>
             </div>
 
         </section>
