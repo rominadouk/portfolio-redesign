@@ -1,0 +1,18 @@
+#topOverlay {
+    background-color: gray;
+    height: 200px;
+    width: 260px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: -3px;
+
+}
+
+#bottomLayer {
+    background-color: lightblue;
+    height: 300px;
+    width: 265px;
+    margin-left: 10px;
+    margin-top: 45px;
+    border-radius: 5px;
+}

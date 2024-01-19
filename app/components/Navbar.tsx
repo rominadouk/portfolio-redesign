@@ -17,7 +17,7 @@ const Navbar = () => {
     console.log(hamburgerMenuIsOpen)
     
   return (
-    <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-20'}>
+    <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 '}>
         <div className='flex justify-between'>
         <div className='flex gap-3'>
             <p className='text-3xl font-semibold'>RD</p>
@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Navbar View END on Desktop */}
         {
             hamburgerMenuIsOpen && (
-                <div className='flex flex-col py-5 relative bg-white text-center text-xl'>
+                <div className='flex flex-col py-5 relative bg-white text-center text-xl lg:hidden'>
                     <ul className='flex flex-col gap-5' onClick={toggleMobileMenu}>
                         <Link href='/'>
                             <li>Home</li>

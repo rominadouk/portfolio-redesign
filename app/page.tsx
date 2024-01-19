@@ -30,19 +30,21 @@ export default function Home() {
   return (
     <main className="lg:flex lg:flex-col">
       {/* Gradient Header */}
-      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green lg:h-96 lg:mb-[-240px]'>
+      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green lg:h-[430px] lg:mb-[-320px]'>
       </div>
       {/* Gradient Header End*/}
 
       {/* Intro Blurb */}
       <div id='intro' className='flex flex-col text-center lg:flex-row lg:text-left lg:self-center'> 
+
         {/* Anime Portrait Image */}
-        <div id='home-portrait' className='h-52 rounded-md w-80 relative self-center lg:h-72 lg:w-96 lg:self-start lg:ml-28'> 
+        <div id='home-portrait' className='h-52 rounded-md w-80 relative self-center lg:h-96 lg:w-[475px] lg:self-start lg:ml-28'> 
         </div>
         {/* Anime Portrait Image End*/}
+
         <div className='mt-3 lg:self-center lg:ml-[-25px] lg:z-50'>
-          <h1 className='text-6xl font-medium lg:font-semibold'>Romina Douk</h1>
-          <p className='font-medium lg:mt-3 lg:text-3xl'>Full-Stack Software Developer</p>
+          <h1 className='text-5xl font-medium lg:text-8xl lg:font-semibold'>Romina Douk</h1>
+          <p className='font-medium lg:mt-3 lg:text-5xl'>Full-Stack Software Developer</p>
         </div>
       </div>
       {/* Intro Blurb  End*/}
