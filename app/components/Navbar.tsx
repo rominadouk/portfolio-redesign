@@ -11,10 +11,11 @@ import Link from 'next/link'
 const Navbar = () => {
     const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
 
+    
     const toggleMobileMenu = () => {
         setHamburgerMenuIsOpen(!hamburgerMenuIsOpen)
     };
-    console.log(hamburgerMenuIsOpen)
+    // console.log(hamburgerMenuIsOpen)
     
   return (
     <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 '}>
@@ -30,7 +31,7 @@ const Navbar = () => {
             <Link href='/'>
                 <li>Home</li>
             </Link>
-            <Link href='/projects'>
+            <Link href='/projects/zen'>
                 <li>Projects</li>
             </Link>
             <Link href='/about'>
@@ -58,7 +59,7 @@ const Navbar = () => {
                         <Link href='/'>
                             <li>Home</li>
                         </Link>
-                        <Link href='/projects' onClick={toggleMobileMenu}>
+                        <Link href='/projects/zen' onClick={toggleMobileMenu}>
                             <li>Projects</li>
                         </Link>
                         <Link href='/about' onClick={toggleMobileMenu}>

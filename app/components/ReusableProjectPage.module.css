@@ -9,10 +9,24 @@
 }
 
 #bottomLayer {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     height: 300px;
-    width: 265px;
+    width: 260px;
     margin-left: 10px;
     margin-top: 45px;
     border-radius: 5px;
+}
+
+@media (min-width:1024px) {
+   #topOverlay {
+    height:330px;
+    width:480px;
+    margin-left: -15px;
+
+   }
+   #bottomLayer {
+    height: auto;
+    width: 480px;
+    padding-bottom: 11px;
+   }
 }
