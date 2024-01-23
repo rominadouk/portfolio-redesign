@@ -31,7 +31,7 @@ const Navbar = () => {
             <Link href='/'>
                 <li>Home</li>
             </Link>
-            <Link href='/projects/zen'>
+            <Link href='/projects'>
                 <li>Projects</li>
             </Link>
             <Link href='/about'>
@@ -54,12 +54,12 @@ const Navbar = () => {
         {/* Navbar View END on Desktop */}
         {
             hamburgerMenuIsOpen && (
-                <div className='flex flex-col py-5 relative bg-white text-center text-xl lg:hidden'>
+                <div className='flex flex-col py-5 relative bg-white text-center text-xl lg:hidden z-100'>
                     <ul className='flex flex-col gap-5' onClick={toggleMobileMenu}>
                         <Link href='/'>
                             <li>Home</li>
                         </Link>
-                        <Link href='/projects/zen' onClick={toggleMobileMenu}>
+                        <Link href='/projects' onClick={toggleMobileMenu}>
                             <li>Projects</li>
                         </Link>
                         <Link href='/about' onClick={toggleMobileMenu}>
