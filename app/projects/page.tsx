@@ -36,8 +36,9 @@ const Projects = () => {
         }, 
 ]
   return (
-    <div className='pt-20'>
-        <h1 className='text-3xl font-semibold mb-5 mx-5 lg:mx-28'>Projects</h1>
+    <div className=''>
+        <div className='h-16 bg-nav'></div>
+        <h1 className='text-3xl pt-4 font-semibold mb-5 mx-5 lg:mx-28'>Projects</h1>
     {/* Single Project Container w/ Image Background END*/}
     {projects.map((project) => {
         return (

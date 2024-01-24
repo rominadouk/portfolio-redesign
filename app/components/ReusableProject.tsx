@@ -13,9 +13,10 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
     //three different states, project 1, 2 or 3, when it is clicked from the homescreen it will pass in either 1, 2 or 3 and will increment, this will be a basic sliding page, with fade-in fade-out 
     
   return (
-    <div className='mx-5 pt-20 mb-3 lg:mx-28'>
-        <h1 className='text-3xl font-semibold mb-5'>{title}</h1>
-        <div className='lg:flex'>
+    <div className=' mb-3 '>
+        <div className='h-16 bg-nav lg:mx-0'> </div>
+        <h1 className='mx-5 text-3xl mt-4 font-semibold mb-5 lg:mx-28 '>{title}</h1>
+        <div className=' mx-5 lg:flex lg:mx-28'>
             {/* Overlays */}
             <div className='overlays container'>
                 <div id={styles.topOverlay}>
