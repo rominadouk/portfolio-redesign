@@ -15,7 +15,10 @@ const config: Config = {
       },
       colors: {
         'sage-green': '#D0D9B3',
-        'button-color': 'rgba(109, 94, 77, 1)',
+        'button-color': 'rgba(100, 132, 88, 1)',
+        'input': 'rgba(234, 250, 230, 1)',
+        'input-border': 'rgba(20, 102, 72, 1)',
+        'nav': 'rgba(185, 206, 177, 1)',
       }
     },
   },

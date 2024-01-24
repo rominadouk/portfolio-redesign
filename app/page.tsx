@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       {/* Gradient Header */}
-      <div id='gradient-background' className='h-72 mb-[-170px] bg-sage-green lg:h-[430px] lg:mb-[-320px]'>
+      <div id='gradient-background' className='h-72 mb-[-170px] bg-nav lg:h-[430px] lg:mb-[-320px]'>
       </div>
       {/* Gradient Header End*/}
 
