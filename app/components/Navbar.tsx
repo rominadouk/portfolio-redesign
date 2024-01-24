@@ -34,9 +34,6 @@ const Navbar = () => {
             <Link href='/projects'>
                 <li>Projects</li>
             </Link>
-            <Link href='/about'>
-                <li>About</li>
-            </Link>
             <Link href='/contact'>
                 <li>Contact</li>
             </Link>
@@ -61,9 +58,6 @@ const Navbar = () => {
                         </Link>
                         <Link href='/projects' onClick={toggleMobileMenu}>
                             <li>Projects</li>
-                        </Link>
-                        <Link href='/about' onClick={toggleMobileMenu}>
-                            <li>About</li>
                         </Link>
                         <Link href='/contact' onClick={toggleMobileMenu}>
                             <li>Contact</li>
