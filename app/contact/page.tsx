@@ -24,7 +24,7 @@ const Contact = () => {
           <div id='contact-form-container'className=' self-center max-w-md md:max-w-lg lg:ml-28 lg:mx-0 lg:w-[27%] lg:mt-7 lg:min-w-[25%]'>
             <h2 className='mx-5 text-2xl font-semibold lg:mx-0'>Let's talk</h2>
             <p className='mx-5 mt-2 text-sm lg:mx-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem rerum sapiente rem soluta temporibus, reiciendis eveniet laborum similique ab! Recusandae obcaecati similique blanditiis cupiditate, incidunt id! Ut, dolore magni?</p>
-                <form className='flex flex-col mx-5 py-10 gap-7 lg:mx-0'>
+                <form className='flex flex-col mx-5 py-10 gap-7 lg:py-5 lg:mx-0'>
                 {/* Name Input */}
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='name' >Name</label>
