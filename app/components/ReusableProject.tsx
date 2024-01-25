@@ -19,19 +19,21 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
             
             {/* Overlays */}
             <div className='flex container justify-center'>
-                <div id='bottom-layer' className='h-auto w-[90%] mt-10 ring-1 ring-black self-center rounded-sm'>
-                <div id='top-layer' className=' h-64 w-full relative bg-stone-400 left-[-10px] top-[-20px] rounded-sm'>
+                <div id='bottom-layer' className='h-auto w-[90%] mt-10 ring-1 ring-black self-center rounded-sm max-w-lg'>
+
+                <div id='top-layer' className='h-64 lg:h-72 w-full relative bg-stone-400 left-[-10px] top-[-20px] md:left-[-20px] rounded-sm'>
                 </div>
+
                 {/* Extra Images 1 & 2 */}
-                    <div className=' mt-[-6px] px-3 flex justify-center gap-2'>
+                    <div className=' mt-[-6px] px-3 md:px-5 flex justify-center gap-2'>
                         <div className='bg-black h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'></div>
                         <div className='bg-black h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'></div>
                     </div>
                 {/* Extra Images 1 & 2 END*/}
                     {/* Buttons Container */}
-                    <div className='flex flex-col pb-3 px-3'>
-                        <a className=' text-center px-6 py-2 mt-3 lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</a>
-                        <div className='flex flex-col text-center md:flex-row  justify-center md:gap-4 mt-3'>
+                    <div className='flex flex-col pb-3 px-3 mt-3 gap-3 md:px-5'>
+                        <a className=' text-center px-6 py-2  lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</a>
+                        <div className='flex flex-col text-center justify-center gap-3 md:flex-row  md:gap-4'>
                             <a className='ring-2 px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Front end</a>
                             <a className='ring-2  px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Backend</a>
                         </div>
