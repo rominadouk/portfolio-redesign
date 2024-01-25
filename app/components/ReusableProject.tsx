@@ -1,14 +1,18 @@
 import React from 'react'
+import Link from 'next/link'
 
 type ProjectProps = {
     title: string, 
     summary: string,
     lessonsLearned: string, 
     roles: string[], 
-    technologies: string[]
+    technologies: string[],
+    liveLink: string | null,
+    backendLink: string | null,
+    frontendLink: string | null
 }
 
-const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLearned, roles, technologies}) => {
+const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLearned, roles, technologies, liveLink, backendLink, frontendLink}) => {
     //three different states, project 1, 2 or 3, when it is clicked from the homescreen it will pass in either 1, 2 or 3 and will increment, this will be a basic sliding page, with fade-in fade-out 
     
   return (
@@ -19,7 +23,7 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
             
             {/* Overlays */}
             <div className='flex container justify-center'>
-                <div id='bottom-layer' className='h-auto w-[90%] mt-10 ring-1 ring-black self-center rounded-sm max-w-lg'>
+                <div id='bottom-layer' className='h-auto w-[90%] mt-10  md:pb-2 ring-1 ring-black self-center rounded-sm max-w-lg'>
 
                 <div id='top-layer' className='h-64 lg:h-72 w-full relative bg-stone-400 left-[-10px] top-[-20px] md:left-[-20px] rounded-sm'>
                 </div>
@@ -32,10 +36,12 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
                 {/* Extra Images 1 & 2 END*/}
                     {/* Buttons Container */}
                     <div className='flex flex-col pb-3 px-3 mt-3 gap-3 md:px-5'>
-                        <a className=' text-center px-6 py-2  lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</a>
+                        { liveLink ? <Link href={liveLink} target='_blank' className=' text-center px-6 py-2  lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</Link> : ''}
                         <div className='flex flex-col text-center justify-center gap-3 md:flex-row  md:gap-4'>
-                            <a className='ring-2 px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Front end</a>
-                            <a className='ring-2  px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Backend</a>
+                            { frontendLink ?  <Link href={frontendLink} target='_blank' className='ring-2 ring-button-color px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Front end</Link> : ''}
+                            { backendLink ?  <Link href={backendLink} target='_blank' className='ring-2  ring-button-color px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Backend</Link> : ''}
+                            
+                            
                         </div>
                     {/* Buttons Container END */}
                     </div>

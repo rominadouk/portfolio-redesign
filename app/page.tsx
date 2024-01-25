@@ -3,6 +3,7 @@ import './page.css'
 import zenImg from '../public/assets/images/zen-home.png'
 import jserviceImg from '../public/assets/images/j-service.png'
 import welspotLandingImg from '../public/assets/images/community-landing.png'
+import Link from 'next/link';
 
 
 
@@ -12,17 +13,14 @@ export default function Home() {
       {
       title: 'zen',
       image: zenImg,
-      link: 'insert the link here'
       }, 
       {
       title: 'jservice',
       image: jserviceImg,
-      link: 'insert the link here'
       }, 
       {
-      title: 'welspot landing',
+      title: 'yanagiba',
       image: welspotLandingImg,
-      link: 'insert the link here'
       }, 
     
     ]
@@ -50,13 +48,18 @@ export default function Home() {
       {/* Project Section */}
       <section id='projects' className='flex flex-col items-center mt-10 gap-9 pb-5  md:flex-row  md:justify-center'>
         {projects.map((project) => {
-          return (
-            <div key={project.title} className='flex flex-col justify-between h-60 w-56 text-center relative drop-shadow-xl'>
-              <div className=' flex-1 relative'>
-                <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' />
+          return (     
+
+            <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl'>
+              <Link href={`/projects/${project.title.toLowerCase()}`} >
+              <div className=' h-52    relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover' }}>
+                {/* <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' /> */}
               </div>
               <h2 className='py-3 bg-white font-medium'>{project.title}</h2>
+              </Link>
             </div>
+
+
           )
         })}
       </section>

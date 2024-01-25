@@ -20,6 +20,9 @@ const config: Config = {
         'input-border': 'rgba(20, 102, 72, 1)',
         'nav': 'rgba(185, 206, 177, 1)',
         'stroke': 'rgba(206, 192, 177, 1)',
+      },
+      fontFamily: {
+        'cabin': ['Cabin', 'sans-serif']
       }
     },
   },
