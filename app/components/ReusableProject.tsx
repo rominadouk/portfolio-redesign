@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './ReusableProjectPage.module.css'
 
 type ProjectProps = {
     title: string, 
@@ -16,27 +15,32 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
     <div className=' mb-3 '>
         <div className='h-16 bg-nav lg:mx-0'> </div>
         <h1 className='mx-5 text-3xl mt-4 font-semibold mb-5 lg:mx-28 '>{title}</h1>
-        <div className=' mx-5 lg:flex lg:mx-28'>
+        <div className='lg:flex lg:mx-28'>
+            
             {/* Overlays */}
-            <div className='overlays container'>
-                <div id={styles.topOverlay}>
+            <div className='flex container justify-center'>
+                <div id='bottom-layer' className='h-auto w-[90%] mt-10 ring-1 ring-black self-center rounded-sm'>
+                <div id='top-layer' className=' h-64 w-full relative bg-stone-400 left-[-10px] top-[-20px] rounded-sm'>
                 </div>
-                <div id={styles.bottomLayer} className='lg:flex lg:flex-col gap-1 px-5 lg:ring-1 ring-black'>
-                    <div className='lg:mt-[293px] lg:flex lg:gap-2 lg:max-w-md'>
-                        <div className='bg-black lg:h-36 lg:w-60 lg:rounded-lg'></div>
-                        <div className='bg-black lg:h-36 lg:w-60 lg:rounded-lg'></div>
+                {/* Extra Images 1 & 2 */}
+                    <div className=' mt-[-6px] px-3 flex justify-center gap-2'>
+                        <div className='bg-black h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'></div>
+                        <div className='bg-black h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'></div>
                     </div>
-                    <div className='flex flex-col lg:mt-6'>
-                        <button className=' lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</button>
-                        <div className='flex justify-between lg:gap-4 mt-3'>
-                            <button className='ring-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color lg:w-1/2'>Front end</button>
-                            <button className='ring-2  lg:px-9 lg:py-2 lg:rounded-sm text-button-color lg:w-1/2'>Backend</button>
+                {/* Extra Images 1 & 2 END*/}
+                    {/* Buttons Container */}
+                    <div className='flex flex-col pb-3 px-3'>
+                        <a className=' text-center px-6 py-2 mt-3 lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</a>
+                        <div className='flex flex-col text-center md:flex-row  justify-center md:gap-4 mt-3'>
+                            <a className='ring-2 px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Front end</a>
+                            <a className='ring-2  px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Backend</a>
                         </div>
-
+                    {/* Buttons Container END */}
                     </div>
                 </div>
             </div>
             {/* Overlays End */}
+
             <section className='ml-3 lg:flex lg:flex-col '>
                 <h2 className='text-2xl font-semibold mb-2 mt-8'>Summary</h2>
                 <p>{summary}</p>
