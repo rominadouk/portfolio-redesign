@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import './page.css'
 import zenImg from '../public/assets/images/zen-home.png'
 import jserviceImg from '../public/assets/images/j-service.png'
@@ -65,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* Project Section End*/}
-      <button className='bg-button-color text-white py-3 px-14 rounded-md mx-auto'>Contact</button>
+      <Link href='/contact' className='bg-button-color text-white py-3 px-14 rounded-md mx-auto'>Contact</Link>
 
 
     </main>

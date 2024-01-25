@@ -1,14 +1,13 @@
-'use client'
+
 import React from 'react'
 import zenImage from '../../public/assets/images/zen-home.png'
 import jserviceImage from '../../public/assets/images/j-service.png'
 import yanagibaImage from '../../public/assets/images/community-landing.png'
 import { StaticImageData } from 'next/image'
-import { useRouter } from 'next/navigation'
+import ViewProjectDetails from '../components/ViewProjectDetails'
 
 
 const Projects = () => {
-    const router = useRouter();
 
     // Add all projects to showcase here. 1 or 2 sentences description max. With Cover Image.
 
@@ -57,9 +56,7 @@ const Projects = () => {
                     {/* Project Image Div */}
                     <div className='h-48 mt-[-35px] rounded-md md:h-56 ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover' }}>
                     </div>
-                    <button className='mt-3 bg-button-color text-white py-3 px-8 rounded-md' onClick={()=> {
-                        router.push(`/projects/${project.name.toLowerCase()}`)
-                    }}>View Project Details</button>
+                    <ViewProjectDetails name={project.name} />
                 </div>
 
             </div>
