@@ -14,7 +14,7 @@ const jservice = () => {
 
   return (
     <div>
-        <ReusableProjectPage title={jserviceData.title} summary={jserviceData.summary} lessonsLearned={jserviceData.lessonsLearned} roles={jserviceData.roles} technologies={jserviceData.technologies} />
+        <ReusableProjectPage title={jserviceData.title} summary={jserviceData.summary} lessonsLearned={jserviceData.lessonsLearned} roles={jserviceData.roles} technologies={jserviceData.technologies} liveLink={null} backendLink={null} frontendLink={null} />
     </div>
   )
 }

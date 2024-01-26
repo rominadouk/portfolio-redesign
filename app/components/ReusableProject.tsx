@@ -16,9 +16,9 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
     //three different states, project 1, 2 or 3, when it is clicked from the homescreen it will pass in either 1, 2 or 3 and will increment, this will be a basic sliding page, with fade-in fade-out 
     
   return (
-    <div className=' mb-3 '>
+    <div className=' mb-3'>
         <div className='h-16 bg-nav lg:mx-0'> </div>
-        <h1 className='mx-5 text-3xl mt-4 font-semibold mb-5 lg:mx-28 '>{title}</h1>
+        <h1 className='mx-5 text-5xl mb-5 mt-10 font-semibold lg:mb-0 lg:mx-28 '>{title}</h1>
         <div className='lg:flex lg:mx-28'>
             
             {/* Overlays */}
@@ -50,13 +50,13 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
             {/* Overlays End */}
 
             <section className='ml-3 lg:flex lg:flex-col '>
-                <h2 className='text-2xl font-semibold mb-2 mt-8'>Summary</h2>
+                <h2 className='text-3xl font-semibold mb-2 mt-8'>Summary</h2>
                 <p>{summary}</p>
-                <h2 className='text-2xl font-semibold mb-2 mt-8'>Lessons Learned</h2>
+                <h2 className='text-3xl font-semibold mb-2 mt-8'>Lessons Learned</h2>
                 <p>{lessonsLearned}</p>
                 <div className='lists lg:flex lg:gap-48'>
                     <div id='Roles'>
-                        <h2 className='text-2xl font-semibold mb-2 mt-8'>Roles</h2>
+                        <h2 className='text-3xl font-semibold mb-2 mt-8'>Roles</h2>
                         <ul className='list-disc ml-7'>
                             {roles.map((role) => {
                                 return(
@@ -66,7 +66,7 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
                         </ul>
                     </div>
                     <div id='techonologies'>
-                        <h2 className='text-2xl font-semibold mb-2 mt-8'>Technologies</h2>
+                        <h2 className='text-3xl font-semibold mb-2 mt-8'>Technologies</h2>
                         <ul className='list-disc ml-7'>
                         {technologies.map((technology) => {
                                 return (

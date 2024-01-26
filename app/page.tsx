@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* Project Section End*/}
-      <Link href='/contact' className='bg-button-color text-white py-3 px-14 rounded-md mx-auto'>Contact</Link>
+      <Link href='/contact' className='bg-button-color text-white py-3 px-14 rounded-md mx-auto my-10'>Contact</Link>
 
 
     </main>

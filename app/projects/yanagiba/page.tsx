@@ -14,7 +14,7 @@ const yanagiba = () => {
 
   return (
     <div>
-        <ReusableProjectPage title={yanagibaData.title} summary={yanagibaData.summary} lessonsLearned={yanagibaData.lessonsLearned} roles={yanagibaData.roles} technologies={yanagibaData.technologies} />
+        <ReusableProjectPage title={yanagibaData.title} summary={yanagibaData.summary} lessonsLearned={yanagibaData.lessonsLearned} roles={yanagibaData.roles} technologies={yanagibaData.technologies} liveLink={null} backendLink={null} frontendLink={null} />
     </div>
   )
 }
