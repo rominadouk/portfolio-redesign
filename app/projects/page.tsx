@@ -1,8 +1,9 @@
 
 import React from 'react'
 import zenImage from '../../public/assets/images/zen-home.png'
-import jserviceImage from '../../public/assets/images/j-service.png'
-import yanagibaImage from '../../public/assets/images/community-landing.png'
+import yanagibaImage from '../../public/assets/images/yanagiba/desktop.png'
+import sneakPeekImage from '../../public/assets/images/sneakpeek/desktop.png'
+import packerImage from '../../public/assets/images/weather-packer/desktop-all.png'
 import { StaticImageData } from 'next/image'
 import ViewProjectDetails from '../components/ViewProjectDetails'
 
@@ -30,13 +31,13 @@ const Projects = () => {
         {
             name: 'SneakPeek',
             description: 'A sneaker viewing gallery.',
-            image: jserviceImage
+            image: sneakPeekImage
 
         }, 
         {
             name: 'SpontaneousPacker',
             description: 'A packer helper that provides a three-day forecast and provides packing suggestions based on weather conditions.',
-            image: jserviceImage
+            image: packerImage
 
         }, 
 ]

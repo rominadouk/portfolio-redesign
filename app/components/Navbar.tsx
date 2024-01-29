@@ -5,6 +5,7 @@ import Image from 'next/image'
 import hamburgerMenu from '../../public/assets/icons/hamburger-menu.svg'
 import githubIcon from '../../public/assets/icons/github-icon.svg'
 import linkedinIcon from '../../public/assets/icons/linkedin-icon.svg'
+import logo from '../../public/favicon.svg'
 
 import Link from 'next/link'
 
@@ -21,7 +22,8 @@ const Navbar = () => {
     <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 '}>
         <div className='flex justify-between'>
         <div className='flex gap-3'>
-            <p className='text-3xl font-semibold'>RD</p>
+            {/* logo */}
+            <Image src={logo} alt='rd-logo' className='w-10'/>
             <p className='text-lg place-self-center'>Romina Douk</p>
         </div>
         <Image src={hamburgerMenu}   className='lg:hidden cursor-pointer' alt='three-line-menu' onClick = {toggleMobileMenu}/>

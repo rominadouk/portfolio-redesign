@@ -1,7 +1,7 @@
 import './page.css'
-import zenImg from '../public/assets/images/zen-home.png'
-import jserviceImg from '../public/assets/images/j-service.png'
-import welspotLandingImg from '../public/assets/images/community-landing.png'
+import zenImg from '../public/assets/images/zen/desktop.png'
+import sneakPeekImg from '../public/assets/images/sneakpeek/desktop.png'
+import yanagibaImg from '../public/assets/images/yanagiba/desktop.png'
 import Link from 'next/link';
 
 
@@ -10,16 +10,16 @@ export default function Home() {
 
      const projects = [
       {
-      title: 'zen',
+      title: 'Zen',
       image: zenImg,
       }, 
       {
-      title: 'jservice',
-      image: jserviceImg,
+      title: 'SneakPeek',
+      image: sneakPeekImg,
       }, 
       {
-      title: 'yanagiba',
-      image: welspotLandingImg,
+      title: 'Yanagiba',
+      image: yanagibaImg,
       }, 
     
     ]
@@ -39,7 +39,7 @@ export default function Home() {
         {/* Anime Portrait Image End*/}
         <div className='mt-3 lg:self-center lg:ml-[-25px] lg:z-50'>
           <h1 className='text-5xl font-semibold md:text-6xl lg:text-8xl'>Romina Douk</h1>
-          <p className='font-semibold md:text-2xl lg:mt-3 lg:text-5xl'>Full-Stack Software Developer</p>
+          <p className='font-semibold text-forest-green md:text-2xl lg:mt-3 lg:text-5xl'>Full-Stack Software Developer</p>
         </div>
       </div>
       {/* Intro Blurb  End*/}
@@ -51,7 +51,7 @@ export default function Home() {
 
             <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl'>
               <Link href={`/projects/${project.title.toLowerCase()}`} >
-              <div className=' h-52    relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover' }}>
+              <div className=' h-52    relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
                 {/* <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' /> */}
               </div>
               <h2 className='py-3 bg-white font-medium'>{project.title}</h2>
