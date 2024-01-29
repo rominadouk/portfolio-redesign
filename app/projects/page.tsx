@@ -1,8 +1,8 @@
 
 import React from 'react'
-import zenImage from '../../public/assets/images/zen-home.png'
+import zenImage from '../../public/assets/images/zen/desktop.png'
 import yanagibaImage from '../../public/assets/images/yanagiba/desktop.png'
-import sneakPeekImage from '../../public/assets/images/sneakpeek/desktop.png'
+import sneakPeekImage from '../../public/assets/images/sneakpeek/screenshot.png'
 import packerImage from '../../public/assets/images/weather-packer/desktop-all.png'
 import { StaticImageData } from 'next/image'
 import ViewProjectDetails from '../components/ViewProjectDetails'
@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <div className=''>
         <div className='h-16 bg-nav'></div>
-        <h1 className='text-5xl pt-4 mt-10 font-semibold mb-5 mx-5 lg:mx-28 lg:mb-0'>Projects</h1>
+        <h1 className='text-5xl pt-4 mt-10 font-semibold mb-5 mx-5 lg:mx-28 '>Projects</h1>
     {/* Single Project Container w/ Image Background END*/}
     {projects.map((project) => {
         return (

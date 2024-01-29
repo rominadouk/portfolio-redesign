@@ -1,5 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
+import screenshotImg from '../../../public/assets/images/sneakpeek/screenshot.png'
+import desktopImg from '../../../public/assets/images/sneakpeek/sneakpeek-mockup-desktop.png'
+import mobileImg from '../../../public/assets/images/sneakpeek/sneakpeek-mobile-views.png'
 
 const SneakPeek = () => {
 
@@ -10,13 +13,16 @@ const SneakPeek = () => {
         roles: ['individual full-stack developer', 'designer'],
         technologies: ['HTML', 'CSS', 'jQuery', 'Plugin: Vide', 'Plugin: Skippr', 'Plugin: Nanogallery', 'Plugin: Tilted Page Scroll' ],
         liveLink: 'https://sneakpeek-romina.netlify.app/',
-        frontendLink: 'https://github.com/rominadouk/CISW-sneak-peek-plugins'
+        frontendLink: 'https://github.com/rominadouk/CISW-sneak-peek-plugins',
+        desktopView: desktopImg,
+        mobileImg: mobileImg,
+        screenshot: screenshotImg,
     }
 
 
   return (
     <div>
-        <ReusableProjectPage title={sneakPeekData.title} summary={sneakPeekData.summary} lessonsLearned={sneakPeekData.lessonsLearned} roles={sneakPeekData.roles} technologies={sneakPeekData.technologies} liveLink={sneakPeekData.liveLink} backendLink={null} frontendLink={sneakPeekData.frontendLink} />
+        <ReusableProjectPage title={sneakPeekData.title} summary={sneakPeekData.summary} lessonsLearned={sneakPeekData.lessonsLearned} roles={sneakPeekData.roles} technologies={sneakPeekData.technologies} liveLink={sneakPeekData.liveLink} backendLink={null} frontendLink={sneakPeekData.frontendLink} desktopView={sneakPeekData.desktopView} mobileView={sneakPeekData.mobileImg} screenshot={sneakPeekData.screenshot}/>
     </div>
   )
 }

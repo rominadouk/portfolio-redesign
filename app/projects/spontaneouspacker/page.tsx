@@ -1,5 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
+import screenshotImg from '../../../public/assets/images/weather-packer/desktop-all.png'
+import desktopImg from '../../../public/assets/images/weather-packer/spontaneous-trip-packer-desktop.png'
+import mobileImg from '../../../public/assets/images/weather-packer/weather-packer-mobile-views.png'
 
 const spontaneousPacker = () => {
 
@@ -11,13 +14,16 @@ const spontaneousPacker = () => {
         technologies: ['HTML', 'CSS', 'JavaScript','Netlify', 'NodeJS', 'ExpressJS', 'MongoDB'],
         liveLink: 'https://spontaneous-trip-packer.netlify.app/',
         frontendLink: 'https://github.com/rominadouk/spontaneous-trip-packer',
-        backendLink: 'https://github.com/rominadouk/weekend_packer_backend'
+        backendLink: 'https://github.com/rominadouk/weekend_packer_backend',
+        desktopView: desktopImg,
+        mobileImg: mobileImg,
+        screenshot: screenshotImg,
     }
 
 
   return (
     <div>
-        <ReusableProjectPage title={spontaneousPackerData.title} summary={spontaneousPackerData.summary} lessonsLearned={spontaneousPackerData.lessonsLearned} roles={spontaneousPackerData.roles} technologies={spontaneousPackerData.technologies} liveLink={spontaneousPackerData.liveLink} backendLink={spontaneousPackerData.backendLink} frontendLink={spontaneousPackerData.frontendLink} />
+        <ReusableProjectPage title={spontaneousPackerData.title} summary={spontaneousPackerData.summary} lessonsLearned={spontaneousPackerData.lessonsLearned} roles={spontaneousPackerData.roles} technologies={spontaneousPackerData.technologies} liveLink={spontaneousPackerData.liveLink} backendLink={spontaneousPackerData.backendLink} frontendLink={spontaneousPackerData.frontendLink} desktopView={spontaneousPackerData.desktopView} mobileView={spontaneousPackerData.mobileImg} screenshot={spontaneousPackerData.screenshot} />
     </div>
   )
 }

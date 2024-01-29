@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <div className=' flex flex-col '>
        <div className='h-16 bg-nav'></div>
-        <h1 className='text-5xl pt-4 mt-10 font-semibold mb-5 mx-5 lg:mx-20 lg:ml-28 lg:mb-0'>Contact</h1>
+        <h1 className='text-5xl pt-4 mt-10 font-semibold mb-5 mx-5 lg:mx-20 lg:ml-28 '>Contact</h1>
         <div className='flex flex-col lg:flex-row lg:gap-7'>
           {/* contact form container */}
           <div id='contact-form-container'className=' self-center max-w-md md:max-w-lg lg:ml-28 lg:mx-0 lg:w-[27%] lg:mt-7 lg:min-w-[25%]'>

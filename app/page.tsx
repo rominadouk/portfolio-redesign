@@ -1,6 +1,6 @@
 import './page.css'
 import zenImg from '../public/assets/images/zen/desktop.png'
-import sneakPeekImg from '../public/assets/images/sneakpeek/desktop.png'
+import sneakPeekImg from '../public/assets/images/sneakpeek/screenshot.png'
 import yanagibaImg from '../public/assets/images/yanagiba/desktop.png'
 import Link from 'next/link';
 

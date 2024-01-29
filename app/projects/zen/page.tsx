@@ -1,5 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
+import screenshotImg from '../../../public/assets/images/zen/desktop.png'
+import desktopImg from '../../../public/assets/images/zen/zen-mockup-desktop.png'
+import mobileImg from '../../../public/assets/images/zen/zen-mobile-views.png'
 
 const Zen = () => {
 
@@ -11,13 +14,16 @@ const Zen = () => {
         technologies: ['MongoDB', 'Express JS', 'React JS', 'Node', 'TypeScript', 'Tailwind CSS', 'Heroku'],
         liveLink: 'https://zen-redesign-33d46e687340.herokuapp.com/',
         backendLink: 'https://github.com/rominadouk/zen_backend',
-        frontendLink: 'https://github.com/rominadouk/zen-redesign'
+        frontendLink: 'https://github.com/rominadouk/zen-redesign',
+        desktopView: desktopImg,
+        mobileImg: mobileImg,
+        screenshot: screenshotImg,
     }
 
 
   return (
     <div>
-        <ReusableProjectPage title={ZenData.title} summary={ZenData.summary} lessonsLearned={ZenData.lessonsLearned} roles={ZenData.roles} technologies={ZenData.technologies}  liveLink={ZenData.liveLink} backendLink={ZenData.backendLink} frontendLink={ZenData.frontendLink}/>
+        <ReusableProjectPage title={ZenData.title} summary={ZenData.summary} lessonsLearned={ZenData.lessonsLearned} roles={ZenData.roles} technologies={ZenData.technologies}  liveLink={ZenData.liveLink} backendLink={ZenData.backendLink} frontendLink={ZenData.frontendLink} desktopView={ZenData.desktopView} mobileView={ZenData.mobileImg} screenshot={ZenData.screenshot}/>
     </div>
   )
 }

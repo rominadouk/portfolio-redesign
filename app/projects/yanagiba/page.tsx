@@ -1,5 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
+import screenshotImg from '../../../public/assets/images/yanagiba/desktop.png'
+import desktopImg from '../../../public/assets/images/yanagiba/yanagiba-mockup-desktop.png'
+import mobileImg from '../../../public/assets/images/yanagiba/yanagiba-mobile-views.png'
 
 const yanagiba = () => {
 
@@ -10,13 +13,16 @@ const yanagiba = () => {
         roles: ['individual full-stack developer'],
         technologies: ['HTML', 'CSS', 'Tailwind CSS', 'JavaScript','Netlify'],
         liveLink: 'https://yanagiba.netlify.app/',
-        frontendLink: 'https://github.com/rominadouk/yanagiba'
+        frontendLink: 'https://github.com/rominadouk/yanagiba',
+        desktopView: desktopImg,
+        mobileImg: mobileImg,
+        screenshot: screenshotImg,
     }
 
 
   return (
     <div>
-        <ReusableProjectPage title={yanagibaData.title} summary={yanagibaData.summary} lessonsLearned={yanagibaData.lessonsLearned} roles={yanagibaData.roles} technologies={yanagibaData.technologies} liveLink={yanagibaData.liveLink} backendLink={null} frontendLink={yanagibaData.frontendLink} />
+        <ReusableProjectPage title={yanagibaData.title} summary={yanagibaData.summary} lessonsLearned={yanagibaData.lessonsLearned} roles={yanagibaData.roles} technologies={yanagibaData.technologies} liveLink={yanagibaData.liveLink} backendLink={null} frontendLink={yanagibaData.frontendLink} desktopView={yanagibaData.desktopView} mobileView={yanagibaData.mobileImg} screenshot={yanagibaData.screenshot}/>
     </div>
   )
 }
