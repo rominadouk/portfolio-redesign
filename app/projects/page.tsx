@@ -28,8 +28,14 @@ const Projects = () => {
             image: yanagibaImage
         }, 
         {
-            name: 'jservice',
-            description: 'A mimic of the hit game-show Jeopardy, using the jservice api.',
+            name: 'SneakPeek',
+            description: 'A sneaker viewing gallery.',
+            image: jserviceImage
+
+        }, 
+        {
+            name: 'SpontaneousPacker',
+            description: 'A packer helper that provides a three-day forecast and provides packing suggestions based on weather conditions.',
             image: jserviceImage
 
         }, 
