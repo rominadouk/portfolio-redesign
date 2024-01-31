@@ -21,7 +21,9 @@ const Navbar = () => {
     // console.log(hamburgerMenuIsOpen)
     
   return (
-    <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 '}>
+    // <nav className={ hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white' : 'z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 '}>
+    <nav className={ `z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 ${hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white lg:bg-transparent' : '' }`}>
+
         <div className='flex justify-between'>
             <div className='flex gap-3'>
                 {/* logo */}
