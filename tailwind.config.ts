@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'custom-gradient': 'linear-gradient(84deg, #B9CEB1 0%, #E3ECE0 100%)',
       },
       colors: {
         'sage-green': '#D0D9B3',
@@ -23,6 +21,8 @@ const config: Config = {
         'dark-green': '#1F261B',
         'off-white': 'rgba(255, 255, 255, 1)',
         'forest-green': '#146648',
+        'green-gradient': 'rgba(185,206,177, 1)',
+        'white-gradient': 'rgba(277,236,224, 1)'
 
       },
       fontFamily: {

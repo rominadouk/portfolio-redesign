@@ -95,7 +95,7 @@ const Contact = () => {
                       </div>
                   </div>
                   {/* Trait Cards End */}
-                  <div id={styles.biographySection} className='bg-nav px-5 py-10 lg:pr-72 lg:pt-24 lg:mt-[-32px]'>
+                  <div id={styles.biographySection} className='bg-custom-gradient px-5 py-10 lg:pr-72 lg:pt-24 lg:mt-[-32px]'>
                   {/* Experience and Skills Container */}
                       <div className='lg:pr-80 mt-3 lg:ml-8'>
                               <h2 className='text-xl font-semibold mb-2 '>Experience</h2>
