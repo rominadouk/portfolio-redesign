@@ -1,8 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
-import screenshotImg from '../../../public/assets/images/weather-packer/desktop-all.png'
-import desktopImg from '../../../public/assets/images/weather-packer/spontaneous-trip-packer-desktop.png'
-import mobileImg from '../../../public/assets/images/weather-packer/weather-packer-mobile-views.png'
+import screenshotImg from '../../../public/assets/images/weather-packer/desktop-modal.png'
+import desktopImg from '../../../public/assets/images/weather-packer/packer-desktop-mockup.png'
+import mobileImg from '../../../public/assets/images/weather-packer/packer-mobile-views.png'
 
 const packer = () => {
 

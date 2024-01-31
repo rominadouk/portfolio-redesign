@@ -1,8 +1,8 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
-import screenshotImg from '../../../public/assets/images/sneakpeek/screenshot.png'
-import desktopImg from '../../../public/assets/images/sneakpeek/sneakpeek-mockup-desktop.png'
-import mobileImg from '../../../public/assets/images/sneakpeek/sneakpeek-mobile-views.png'
+import screenshotImg from '../../../public/assets/images/sneakpeek/desktop-2.png'
+import desktopImg from '../../../public/assets/images/sneakpeek/sneak-peek-desktop-mockup.png'
+import mobileImg from '../../../public/assets/images/sneakpeek/sneak-peek-mobile-views.png'
 
 const SneakPeek = () => {
 

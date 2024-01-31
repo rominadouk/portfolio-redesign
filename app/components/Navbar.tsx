@@ -43,8 +43,8 @@ const Navbar = () => {
 
         </div>
             {/* Mobile View */}
-                    <div className={`flex flex-col py-5 relative  text-center text-xl lg:hidden z-100 transition-all duration-300 ease-out transform  ${hamburgerMenuIsOpen ? 'translate-y-2 opacity-100 visible pointer-events-auto' : 'translate-y-1 opacity-0 invisible pointer-events-none'}`}>
-                        <ul className='flex flex-col gap-5' onClick={toggleMobileMenu}>
+                    <div className={`lg:hidden flex  flex-col py-5 relative  text-center text-xl  z-100 transition-all duration-300 ease-out transform  ${hamburgerMenuIsOpen ? 'translate-y-2 opacity-100 visible pointer-events-auto' : 'translate-y-1 opacity-0 invisible pointer-events-none'}`}>
+                        <ul className='flex flex-col gap-5 ' onClick={toggleMobileMenu}>
                             <Link href='/' >
                                 <li>Home</li>
                             </Link>
@@ -59,8 +59,8 @@ const Navbar = () => {
                                     <Image src={linkedinIcon} alt='linkedin-icon' className='w-7' />
                                 </li>
                             </Link>
-                            <Link href='https://github.com/rominadouk'  className='self-center'  target='_blank'>
-                                <li>
+                            <Link href='https://github.com/rominadouk'  className='self-center '  target='_blank'>
+                                <li className=''>
                                     <Image src={githubIcon} alt='github-icon' className='w-7 h-8' />
                                 </li>
                             </Link>

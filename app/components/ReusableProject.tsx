@@ -23,7 +23,7 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
   return (
     <div className=' mb-3'>
         <div className='h-16 bg-nav lg:mx-0'> </div>
-        <h1 className='mx-5 text-5xl mb-5 mt-10 font-semibold lg:mb-0 lg:mx-28 '>{title}</h1>
+        <h1 className='mx-5 text-5xl mb-8 mt-10 font-semibold lg:mb-0 lg:mx-28 '>{title}</h1>
         <div className='lg:flex lg:mx-28'>
             
             {/* Overlays */}

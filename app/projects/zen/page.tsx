@@ -1,7 +1,7 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
-import screenshotImg from '../../../public/assets/images/zen/desktop.png'
-import desktopImg from '../../../public/assets/images/zen/zen-mockup-desktop.png'
+import screenshotImg from '../../../public/assets/images/zen/desktop-2.png'
+import desktopImg from '../../../public/assets/images/zen/zen-desktop-mockup.png'
 import mobileImg from '../../../public/assets/images/zen/zen-mobile-views.png'
 
 const Zen = () => {

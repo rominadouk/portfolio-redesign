@@ -21,8 +21,7 @@ const config: Config = {
         'dark-green': '#1F261B',
         'off-white': 'rgba(255, 255, 255, 1)',
         'forest-green': '#146648',
-        'green-gradient': 'rgba(185,206,177, 1)',
-        'white-gradient': 'rgba(277,236,224, 1)'
+        'deep-green': '#648458'
 
       },
       fontFamily: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import ReusableProjectPage from '@/app/components/ReusableProject'
-import screenshotImg from '../../../public/assets/images/yanagiba/desktop.png'
-import desktopImg from '../../../public/assets/images/yanagiba/yanagiba-mockup-desktop.png'
+import screenshotImg from '../../../public/assets/images/yanagiba/desktop-2.png'
+import desktopImg from '../../../public/assets/images/yanagiba/yanagiba-desktop-mockup.png'
 import mobileImg from '../../../public/assets/images/yanagiba/yanagiba-mobile-views.png'
 
 const yanagiba = () => {
