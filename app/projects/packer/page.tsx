@@ -4,9 +4,9 @@ import screenshotImg from '../../../public/assets/images/weather-packer/desktop-
 import desktopImg from '../../../public/assets/images/weather-packer/spontaneous-trip-packer-desktop.png'
 import mobileImg from '../../../public/assets/images/weather-packer/weather-packer-mobile-views.png'
 
-const spontaneousPacker = () => {
+const packer = () => {
 
-    const spontaneousPackerData = {
+    const packerData = {
         title: 'Spontaneous Packer',
         summary: "This web application was developed users plan for their spontaneous trips, it provides a three-day forecast and suggestions of what to pack based on the forecast. It also provides a packing list feature to add and delete items.",
         lessonsLearned: 'This project exercised my vanilla JavaScript skills. I improved my DOM manipulation methods with this project. I was able to truly appreciate the value of frameworks when I was working this project, I decided to challenge myself and not use any front-end frameworks. This project is deployed on Netlify and uses a NodeJS backend that I also developed. This is another version of a concept I completed during my time at General Assembly in collaboration with a team of developers called "Cli-Mate Change".',
@@ -23,9 +23,9 @@ const spontaneousPacker = () => {
 
   return (
     <div>
-        <ReusableProjectPage title={spontaneousPackerData.title} summary={spontaneousPackerData.summary} lessonsLearned={spontaneousPackerData.lessonsLearned} roles={spontaneousPackerData.roles} technologies={spontaneousPackerData.technologies} liveLink={spontaneousPackerData.liveLink} backendLink={spontaneousPackerData.backendLink} frontendLink={spontaneousPackerData.frontendLink} desktopView={spontaneousPackerData.desktopView} mobileView={spontaneousPackerData.mobileImg} screenshot={spontaneousPackerData.screenshot} />
+        <ReusableProjectPage title={packerData.title} summary={packerData.summary} lessonsLearned={packerData.lessonsLearned} roles={packerData.roles} technologies={packerData.technologies} liveLink={packerData.liveLink} backendLink={packerData.backendLink} frontendLink={packerData.frontendLink} desktopView={packerData.desktopView} mobileView={packerData.mobileImg} screenshot={packerData.screenshot} />
     </div>
   )
 }
 
-export default spontaneousPacker
+export default packer

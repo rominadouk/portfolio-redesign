@@ -1,0 +1,12 @@
+/* Initial state of the menu - hidden */
+.menu {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* State of the menu when open */
+.menu.open {
+    transform: translateX(0);
+    opacity: 1;
+}

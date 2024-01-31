@@ -66,7 +66,7 @@ const Contact = () => {
                   <textarea id='message' name='message' className=' h-28 ring-1 ring-input-border bg-input rounded-sm p-2' required/>
                 </div>
                 {/* Submit Button */}
-                <input type='submit' className='self-center py-2 px-10 bg-button-color text-white rounded-md'/>
+                <input type='submit' className='self-center py-2 px-10 bg-button-color text-white rounded-md cursor-pointer'/>
             </form>
           </div>
           {/* contact form container END*/}

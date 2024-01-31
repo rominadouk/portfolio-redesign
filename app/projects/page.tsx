@@ -6,6 +6,7 @@ import sneakPeekImage from '../../public/assets/images/sneakpeek/screenshot.png'
 import packerImage from '../../public/assets/images/weather-packer/desktop-all.png'
 import { StaticImageData } from 'next/image'
 import ViewProjectDetails from '../components/ViewProjectDetails'
+import Link from 'next/link'
 
 
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
     const projects: Project[] = [
         {
             name: 'Zen',
-            description: 'A mental health application',
+            description: 'A mental health application.',
             image: zenImage
         },
         {
@@ -35,8 +36,8 @@ const Projects = () => {
 
         }, 
         {
-            name: 'SpontaneousPacker',
-            description: 'A packer helper that provides a three-day forecast and provides packing suggestions based on weather conditions.',
+            name: 'Packer',
+            description: 'Provides a three-day forecast and provides packing suggestions based on weather conditions.',
             image: packerImage
 
         }, 
@@ -61,11 +62,14 @@ const Projects = () => {
                 </div>
                 <div className=' flex flex-col mr-5 ml-11 md:w-full md:mt-10 md:mx-0 md:self-center'>
                     {/* Project Image Div */}
+                    <Link href={`/projects/${project.name.toLowerCase()}`}>
                     <div className='h-48 mt-[-35px] rounded-md md:h-56 ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover' }}>
                     </div>
+                    
+                    </Link>
+
                     <ViewProjectDetails name={project.name} />
                 </div>
-
             </div>
 
         </div>

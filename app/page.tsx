@@ -49,9 +49,9 @@ export default function Home() {
         {projects.map((project) => {
           return (     
 
-            <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl'>
+            <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl transition-all duration-300 ease-out hover:w-96'>
               <Link href={`/projects/${project.title.toLowerCase()}`} >
-              <div className=' h-52    relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+              <div className=' h-52  relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
                 {/* <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' /> */}
               </div>
               <h2 className='py-3 bg-white font-medium'>{project.title}</h2>
