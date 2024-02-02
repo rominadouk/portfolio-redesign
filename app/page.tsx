@@ -25,7 +25,7 @@ export default function Home() {
     ]
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col mb-3 lg:mb-8">
       {/* Gradient Header */}
       <div id='gradient-background' className='h-72 mb-[-170px] bg-custom-gradient lg:h-[430px] lg:mb-[-320px]'>
       </div>
@@ -49,12 +49,12 @@ export default function Home() {
         {projects.map((project) => {
           return (     
 
-            <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl transition-all duration-300 ease-out hover:w-96'>
+            <div key={project.title} className='flex flex-col justify-between w-72 text-center relative drop-shadow-xl transition-all duration-300 ease-out  md:hover:w-96'>
               <Link href={`/projects/${project.title.toLowerCase()}`} >
-              <div className=' h-52  relative ' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
+              <div className=' h-52  rounded-t-md relative' style={{ backgroundImage: `url(${project.image.src})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
                 {/* <Image src={project.image}  className='project-image' alt={project.title} layout='fill' objectFit='cover' /> */}
               </div>
-              <h2 className='py-3 bg-white font-medium'>{project.title}</h2>
+              <h2 className='py-3 bg-white font-medium rounded-b-md'>{project.title}</h2>
               </Link>
             </div>
 

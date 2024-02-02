@@ -21,7 +21,7 @@ const Navbar = () => {
     
   return (
 
-    <nav className={ `z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 ${hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white lg:bg-transparent' : '' }`}>
+    <nav className={ `z-50 pt-4 w-full px-5 absolute lg:flex lg:justify-between lg:px-28 ${hamburgerMenuIsOpen ? ' z-50 pt-4 w-full px-5 absolute bg-white lg:bg-transparent shadow-xl' : '' }`}>
 
         <div className='flex justify-between'>
             <div className='flex gap-3'>
@@ -33,11 +33,11 @@ const Navbar = () => {
                 <p className='text-lg place-self-center'>Romina Douk</p>
             </div>
             <button onClick={toggleMobileMenu} className="flex flex-col justify-center items-center lg:hidden">
-                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${hamburgerMenuIsOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} >
+                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-md ${hamburgerMenuIsOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`} >
                 </span>
-                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${hamburgerMenuIsOpen ? 'opacity-0' : 'opacity-100'}`}>
+                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-md my-0.5 ${hamburgerMenuIsOpen ? 'opacity-0' : 'opacity-100'}`}>
                 </span>
-                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${hamburgerMenuIsOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}>
+                <span className={`bg-dark-green block transition-all duration-300 ease-out h-0.5 w-6 rounded-md ${hamburgerMenuIsOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}>
                 </span>    
             </button>
 

@@ -28,28 +28,28 @@ const ReusableProjectPage:React.FC<ProjectProps> = ({title, summary, lessonsLear
             
             {/* Overlays */}
             <div className='flex container justify-center'>
-                <div id='bottom-layer' className='h-auto w-[90%] mt-10  md:pb-2 ring-1 ring-black self-center rounded-sm max-w-lg'>
+                <div id='bottom-layer' className='h-auto w-[90%] mt-10  md:pb-2 ring-1 ring-black self-center rounded-md max-w-lg'>
 
-                <div id='top-layer' className='h-64 flex justify-center lg:h-72 w-full relative bg-stone-200 left-[-10px] top-[-20px] md:left-[-20px] rounded-sm'>
+                <div id='top-layer' className='h-64 flex justify-center lg:h-72 w-full relative  bg-stone-200 left-[-10px] top-[-20px] md:left-[-20px] rounded-md'>
                     <Image src={desktopView} alt='computer-mockup'className='h-full w-auto ' />
                 </div>
 
                 {/* Extra Images 1 & 2 */}
-                    <div className=' mt-[-6px] px-3 md:px-5 flex justify-center gap-2'>
-                        <div className='bg-stone-200 flex justify-center  h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'>
+                    <div className=' mt-[-6px] px-3 md:px-5 flex justify-center gap-2 '>
+                        <div className='bg-stone-200 flex justify-center  h-24 w-1/2 lg:h-36 lg:w-60 rounded-md'>
                             <Image src={mobileView} alt='phone-view-example'className='h-full w-full' />
                         </div>
                         <div className='bg-stone-200 h-24 w-1/2 lg:h-36 lg:w-60 rounded-lg'>
-                            <Image src={screenshot} alt='computer-mockup'className='h-full w-full' />
+                            <Image src={screenshot} alt='computer-mockup'className='h-full w-full rounded-md' />
                         </div>
                     </div>
                 {/* Extra Images 1 & 2 END*/}
                     {/* Buttons Container */}
                     <div className='flex flex-col pb-3 px-3 mt-3 gap-3 md:px-5'>
-                        { liveLink ? <Link href={liveLink} target='_blank' className=' text-center px-6 py-2  lg:px-9 lg:py-2 lg:rounded-sm text-white bg-button-color'>View live site</Link> : ''}
+                        { liveLink ? <Link href={liveLink} target='_blank' className=' text-center px-6 py-2  lg:px-9 lg:py-2 rounded-md text-white bg-button-color'>View live site</Link> : ''}
                         <div className='flex flex-col text-center justify-center gap-3 md:flex-row  md:gap-4'>
-                            { frontendLink ?  <Link href={frontendLink} target='_blank' className='ring-2 ring-button-color px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Frontend Code</Link> : ''}
-                            { backendLink ?  <Link href={backendLink} target='_blank' className='ring-2  ring-button-color px-6 py-2 lg:px-9 lg:py-2 lg:rounded-sm text-button-color md:w-1/2'>Backend Code</Link> : ''}
+                            { frontendLink ?  <Link href={frontendLink} target='_blank' className='ring-2 ring-button-color px-6 py-2 lg:px-9 lg:py-2 rounded-md text-button-color md:w-1/2'>Frontend Code</Link> : ''}
+                            { backendLink ?  <Link href={backendLink} target='_blank' className='ring-2  ring-button-color px-6 py-2 lg:px-9 lg:py-2 rounded-md text-button-color md:w-1/2'>Backend Code</Link> : ''}
                             
                             
                         </div>

@@ -55,17 +55,17 @@ const Contact = () => {
                 {/* Name Input */}
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='name' >Name</label>
-                  <input id='name' name='name' type='text' className=' h-8 ring-1 ring-input-border bg-input rounded-sm  p-2 lg:h-10' required />
+                  <input id='name' name='name' type='text' className=' h-8 ring-1 ring-input-border bg-input rounded-md  p-2 lg:h-10' required />
                 </div>
                 {/* Email Input */}
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='email'>Email</label>
-                  <input id='email' type='email' name='_replyto' className=' h-8 ring-1 ring-input-border bg-input rounded-sm p-2 lg:h-10' required/>
+                  <input id='email' type='email' name='_replyto' className=' h-8 ring-1 ring-input-border bg-input rounded-md p-2 lg:h-10' required/>
                 </div>
                 {/* Message Input */}
                 <div className='flex flex-col gap-2'>
                   <label htmlFor='message'>Message</label>
-                  <textarea id='message' name='message' className=' h-28 ring-1 ring-input-border bg-input rounded-sm p-2' required/>
+                  <textarea id='message' name='message' className=' h-28 ring-1 ring-input-border bg-input rounded-md p-2' required/>
                 </div>
                 {/* Submit Button */}
                 <input type='submit' className='self-center py-2 px-10 bg-button-color text-off-white rounded-md cursor-pointer'/>
@@ -129,11 +129,14 @@ const Contact = () => {
                                 </div>
                                   <div>
                                     <li>React</li>
+                                    <li>NextJS</li>
                                     <li>Node JS</li>
                                     <li>MongoDB</li>
                                     <li>PostgreSQL</li>
                                     <li>Tailwind CSS</li>
                                     <li>Bootstrap CSS</li>
+                                    <li>REST API</li>
+                                    <li>Deployment</li>
                                   </div>
                               </ul>
                           </div>

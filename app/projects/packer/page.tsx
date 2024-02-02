@@ -10,7 +10,7 @@ const packer = () => {
         title: 'Spontaneous Packer',
         summary: "This web application was developed users plan for their spontaneous trips, it provides a three-day forecast and suggestions of what to pack based on the forecast. It also provides a packing list feature to add and delete items.",
         lessonsLearned: 'This project exercised my vanilla JavaScript skills. I improved my DOM manipulation methods with this project. I was able to truly appreciate the value of frameworks when I was working this project, I decided to challenge myself and not use any front-end frameworks. This project is deployed on Netlify and uses a NodeJS backend that I also developed. This is another version of a concept I completed during my time at General Assembly in collaboration with a team of developers called "Cli-Mate Change".',
-        roles: ['individual full-stack developer'],
+        roles: ['Individual full-stack developer'],
         technologies: ['HTML', 'CSS', 'JavaScript','Netlify', 'NodeJS', 'ExpressJS', 'MongoDB'],
         liveLink: 'https://spontaneous-trip-packer.netlify.app/',
         frontendLink: 'https://github.com/rominadouk/spontaneous-trip-packer',
